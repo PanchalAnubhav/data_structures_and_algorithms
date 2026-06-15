@@ -1,0 +1,5 @@
+# Ignore compiled executable files
+*.exe
+
+# Ignore the output file (but keep input.txt so you have a testing template)
+output.txt
