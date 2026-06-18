@@ -2,10 +2,11 @@
 using namespace std;
 
 void printName( string n){
-    cout << "hii";
+    cout << "hii " << n << endl;
 }
 int main() {
-    int x;
-    cin>> x;
-    cout << "hey" <<x;
+    string name;
+    cin >> name;
+    printName(name);
+    return 0;
 }
