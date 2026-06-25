@@ -17,7 +17,7 @@ void Vectors_of_pairs(){
     v.emplace_back(3,4);     // emplace_back is more efficient than push_back as it constructs the pair in place
 
     for (int i = 0 ; i < v.size() ; i++) {
-        cout << v[i].first() << " " << v[i].second() <<endl;
+        cout << v[i].first << " " << v[i].second << endl;
     
     }
 }
@@ -46,3 +46,9 @@ void copying_vectors(){
     cout <<endl;
 }
 
+int main(){
+    NormalVector();
+    Vectors_of_pairs();
+    vector_containing_same_elements();
+    copying_vectors();
+}
