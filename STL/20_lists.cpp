@@ -12,5 +12,5 @@ void add_elemants(){
 
 /* rest are same as vector,
  just replace vector with 
- list and push_back with push_front 
+ list and push_back with push_front  
  and emplace_back with emplace_front  */
