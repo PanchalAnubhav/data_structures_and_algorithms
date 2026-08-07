@@ -3,7 +3,9 @@ using namespace std;
 
 void nextPermutation(){
     cout << "next permutation of string\n";
-    string s = "abc";
+    string s1 = "abc";
+    string s = s1;
+    sort(s.begin(), s.end());
     do{
         cout << s << "\n";
     } while(next_permutation(s.begin(), s.end()));
