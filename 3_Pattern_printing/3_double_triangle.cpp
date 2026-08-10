@@ -29,6 +29,34 @@ void star_pyramid(){
     }
 }
 
+/*---------------------------------------------------------------------------
+*********
+ ******* 
+  *****  
+   ***   
+    *    
+
+*/
+void reverse_star_pyramid(){
+    cout << "enter row value:" << "\n";
+    int n;
+    cin >> n;
+    for (int i = 0 ; i < n ; i++){
+        //space
+        for(int j = 0 ; j < i ; j++){
+            cout << " ";
+        }
+        //star
+        for(int k = 0 ; k < 2*(n-i-1)+1 ; k++){
+            cout << "*";
+        }
+        //space
+        for(int j = 0 ; j < i ; j++){
+            cout << " ";
+        }
+        cout << "\n";
+    }
+}
 
 
 int main(){
@@ -38,6 +66,7 @@ int main(){
     cin >> t;
     while(t--){
         star_pyramid();
+        reverse_star_pyramid();
     }
     return 0;
 }
