@@ -58,6 +58,24 @@ void reverse_star_pyramid(){
     }
 }
 
+/*---------------------------------------------------------------------------
+    *    
+   ***   
+  *****  
+ ******* 
+*********
+ ******* 
+  *****  
+   ***   
+    *    
+
+*/
+void star_rhombus(){
+    star_pyramid();
+    reverse_star_pyramid();
+    
+}
+
 
 int main(){
     ios_base::sync_with_stdio(false);
@@ -67,6 +85,7 @@ int main(){
     while(t--){
         star_pyramid();
         reverse_star_pyramid();
+        star_rhombus();
     }
     return 0;
 }
