@@ -71,11 +71,41 @@ void reverse_star_pyramid(){
 
 */
 void star_rhombus(){
-    star_pyramid();
-    reverse_star_pyramid();
-    
+    cout << "enter row value:" << "\n";
+    int n;
+    cin >> n;
+    for (int i = 0 ; i < n ; i++){
+        //space
+        for(int j = 0 ; j < n-i-1 ; j++){
+            cout << " ";
+        }
+        //star
+        for(int k = 0 ; k < 2*i + 1 ; k++){
+            cout << "*";
+        }
+        //space
+        for(int j = 0 ; j < n-i-1 ; j++){
+            cout << " ";
+        }
+        cout << "\n";
+    }
+    int n2 = n-1;
+    for (int i = 0 ; i < n2 ; i++){
+        //space
+        for(int j = 0 ; j < i+1 ; j++){
+            cout << " ";
+        }
+        //star
+        for(int k = 0 ; k < 2*(n2-i-1)+1 ; k++){
+            cout << "*";
+        }
+        //space
+        for(int j = 0 ; j < i+1 ; j++){
+            cout << " ";
+        }
+        cout << "\n";
+        }
 }
-
 
 int main(){
     ios_base::sync_with_stdio(false);
