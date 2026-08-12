@@ -135,6 +135,24 @@ void lower_wrt_stars(){
     }
 }
 
+/*---------------------------------------------------------------------------
+5 5 5 5 5 
+4 4 4 4 
+3 3 3 
+2 2 
+1 
+*/
+void IOI(){
+    cout << "enter row value:" << "\n";
+    int n;
+    cin >> n;
+    for (int i = n ; i >=1 ; i--){
+        for (int j = 1 ; j <= i ; j++){
+            cout << "* " << " ";
+        }
+        cout << "\n";
+    }
+}
 
 int main(){
     ios_base::sync_with_stdio(false);
