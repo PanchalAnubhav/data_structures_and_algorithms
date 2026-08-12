@@ -123,32 +123,16 @@ void lower_wrt_stars(){
 2 2 
 1 
 */
-void lower_wrt_stars(){
+void alternate_1_0(){
     cout << "enter row value:" << "\n";
-    int n;
+    int n,start;
     cin >> n;
-    for (int i = n ; i >=1 ; i--){
-        for (int j = 1 ; j <= i ; j++){
-            cout << "* " << " ";
-        }
-        cout << "\n";
-    }
-}
-
-/*---------------------------------------------------------------------------
-5 5 5 5 5 
-4 4 4 4 
-3 3 3 
-2 2 
-1 
-*/
-void IOI(){
-    cout << "enter row value:" << "\n";
-    int n;
-    cin >> n;
-    for (int i = n ; i >=1 ; i--){
-        for (int j = 1 ; j <= i ; j++){
-            cout << "* " << " ";
+    for (int i = 0 ; i < n ; i++){
+        if(i%2==0) start = 1;
+        else start = 0;
+        for (int j = 0 ; j <= i ; j++){
+            cout <<start << " ";
+            start = 1 - start;
         }
         cout << "\n";
     }
@@ -166,6 +150,7 @@ int main(){
         lower_wrt_column();
         lower_wrt_rows();
         lower_wrt_stars();
+        alternate_1_0();
     }
     return 0;
 }
