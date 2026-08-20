@@ -17,6 +17,7 @@ This repository is a hands-on C++ practice workspace focused on:
 - `array/` — array-focused exercises and practice files
 - `DOCUMENTATION.md` — notes and quick references
 - `input.txt` and `output.txt` — sample I/O files used with local execution workflows
+- `more comming soon.....`
 
 ## Topics Covered
 
