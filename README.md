@@ -8,6 +8,8 @@ This repository is a hands-on C++ practice workspace focused on:
 - Sorting and utility algorithms
 - Pattern printing exercises
 - Array and problem-solving practice
+- more to come in upcomming days
+  
 
 ## Repository Structure
 
